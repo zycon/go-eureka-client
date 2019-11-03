@@ -26,7 +26,7 @@ func main() {
 		Map: make(map[string]string),
 	}
 	instance.Metadata.Map["foo"] = "bar"
-	client.RegisterInstance("myapp", instance)
+	client.RegisterInstance(*app, instance)
 	client.GetApplication(instance.App)
 	client.GetInstance(instance.App, instance.HostName)
 	client.SendHeartbeat(instance.App, instance.HostName)
