@@ -135,7 +135,6 @@ func NewInstanceInfo(hostName, app, ip string, port int, ttl uint, isSsl bool) *
 			Enabled: true,
 		}
 	} else {
-		protocol = "http"
 		instanceInfo.VipAddress = protocol + "://" + hostName + stringPort
 		instanceInfo.Port = &Port{
 			Port:    port,
