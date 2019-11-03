@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/ArthurHlt/go-eureka-client/eureka"
+	"github.com/zycon/go-eureka-client/eureka"
 )
 
 func main() {
