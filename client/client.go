@@ -2,9 +2,7 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"github.com/ArthurHlt/go-eureka-client/eureka"
-	"os"
 )
 
 func main() {
