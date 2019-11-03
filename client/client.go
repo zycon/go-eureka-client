@@ -13,9 +13,10 @@ func main() {
 	app := flag.String("app", "nashwan-app", "App Name")
 	ip := flag.String("ip", "127.0.0.1", "IP Address")
 	port := flag.Int("port", 8761, "Port Number")
-	ttl := flag.Uint("port", 10000, "TTL ")
+	ttl := flag.Uint("ttl", 10000, "TTL ")
 	ssl := flag.Bool("ssl", false, "SSL Connection")
 	eurekaUrl := flag.String("sd", "http://127.0.0.1:8761/eureka", "Eureka Server URL")
+	flag.Parse()
 
 	client := eureka.NewClient([]string{
 		*eurekaUrl,
